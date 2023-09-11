@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <title>JS 38</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section class="setting-001">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+
+                        <a class="navbar-brand" href="#">
+                            <img src="img/img1.png" width="100%">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#setting-002" aria-controls="setting-002" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="setting-002">
+
+                            <ul class="navbar-nav m-auto">
+
+                                <li class="nav-item">
+                                    <a class="nav-link setting-004" href="#">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+
+                                    <a class="nav-link setting-004" href="#" id="setting-003" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Brands <span>
+                                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.75 1.625L5.5 5.375L9.25 1.625" stroke="#8B8E99"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="setting-003">
+                                        <a class="dropdown-item" href="#">Liebe</a>
+                                    </div>
+
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link setting-004" href="#">Recent Products</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link setting-004" href="#">Contact</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link setting-004" href="#">About</a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="navbar-nav d-flex flex-row gap-lg-0 gap-3">
+
+                                <li class="nav-item">
+                                    <a class="nav-link setting-004" href="#">
+                                        <img src="img/img2.png">
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link setting-004" href="#">
+                                        <img src="img/img3.png">
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link setting-004" style="position: relative"
+                                        data-bs-toggle="offcanvas" href="#off111" role="button" aria-controls="off111">
+                                        <img src="img/img4.png">
+                                        <div class="setting-005">
+                                            <p id="setting-006">0</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </nav>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="off111" aria-labelledby="offcanvasLabel">
+                        <div class="offcanvas-header pb-0">
+                            <h5 class="offcanvas-title" id="offcanvasLabel">Your Cart</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body pt-0">
+                            <div id="cart">
+                                <ul id="cart-001"></ul>
+                                <p>Total: $<span id="cart-total">0.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6 col-12 d-flex justify-content-center flex-column gap-3 pt-lg-0 pt-5">
+
+                    <h1 class="setting-101">Discover Most Suitable Watches</h1>
+
+                    <p class="setting-102">Find the best, reliable, and cheap smart watches here. We focus on product
+                        quality. Here you can find smart watches of almost all brands. So why you are waiting? Just
+                        order now!</p>
+
+                    <div class="setting-103">
+
+                        <div class="d-flex">
+
+                            <span class="px-3">
+
+                                <svg width="24" height="24" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.625 16.625C13.491 16.625 16.625 13.491 16.625 9.625C16.625 5.75901 13.491 2.625 9.625 2.625C5.75901 2.625 2.625 5.75901 2.625 9.625C2.625 13.491 5.75901 16.625 9.625 16.625Z"
+                                        stroke="#3858D6" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M18.375 18.375L14.5688 14.5688" stroke="#3858D6" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+
+                            <input class="setting-104" type="search" placeholder="Find the best brands">
+
+                        </div>
+
+                        <button class="setting-105 me-2">Search</button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-12 py-5 my-lg-5 d-flex justify-content-center">
+                    <img src="img/img5.png" class="setting-106">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="container py-5">
+
+            <div class="row products" id="setting-201"></div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="container py-5">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <p class="setting-301">Find your favourite smart watch.</p>
+
+                    <h1 class="setting-302">Our Latest Products</h1>
+
+                </div>
+
+                <div class="col-12">
+
+                    <div class="container-fluid mx-0 px-0">
+
+                        <div class="row" id="setting-303">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="setting-314">View More</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12 py-5">
+
+                    <p class="setting-301">Here are our some of the best clients.</p>
+
+                    <h1 class="setting-302">What People Say About Us</h1>
+
+                </div>
+
+                <div class="col-12">
+
+                    <swiper-container pagination="true" id="setting-401" style="width: 100%;"></swiper-container>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="p-4">
+
+        <div class="container setting-501 p-5">
+
+            <div class="row">
+
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h1 class="setting-503">Subscribe To Newsletter</h1>
+                    <p class="setting-504">Get free guide about smart watches daily.</p>
+
+                    <div class="setting-505 d-flex justify-content-between align-items-center">
+                        <input type="email" class="setting-506" placeholder="Enter Email Address">
+
+                        <button class="setting-507">Subscribe</button>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 d-flex">
+                    <img src="img/img11.png" class="setting-502">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-4 mt-3" style="background: #0B0B0B;">
+        <p class="setting-601">Copyright @ 2022 | Mohid</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
